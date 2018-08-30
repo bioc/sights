@@ -26,8 +26,9 @@ Run in R :
 
 - Bioconductor (try http:// if https:// URLs are not supported)
 ```
-source("https://bioconductor.org/biocLite.R")  
-biocLite("sights")  
+if (!requireNamespace("BiocManager", quietly=TRUE))
+    install.packages("BiocManager")
+BiocManager::install("sights")  
 library(sights)
 ```
 

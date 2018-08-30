@@ -61,8 +61,9 @@ citation("sights")
 1.  Please install the package directly from Bioconductor and load it. Note that SIGHTS requires a minimum R version of 3.3.
 
 ``` {r installation, eval=FALSE}
-source("http://bioconductor.org/biocLite.R")
-biocLite("sights")
+if (!requireNamespace("BiocManager", quietly=TRUE))
+    install.packages("BiocManager")
+BiocManager::install("sights")
 library("sights")
 ```
   
@@ -70,11 +71,11 @@ library("sights")
   Otherwise, you can install/update these packages manually.
 ``` {r dependencies, eval=FALSE}
 # Installing packages
-biocLite(c("ggplot2", "reshape2", "lattice", "MASS", "qvalue"))
+BiocManager::install(c("ggplot2", "reshape2", "lattice", "MASS", "qvalue"))
     
 # Updating packages
-biocLite("BiocUpgrade")
-biocLite()
+BiocManager::install("BiocUpgrade")
+BiocManager::install()
 ```
 
 
