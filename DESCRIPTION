@@ -1,7 +1,7 @@
 Package: sights
 Type: Package
 Title: Statistics and dIagnostic Graphs for HTS
-Version: 1.9.0
+Version: 1.9.1
 Authors@R: c(person("Elika", "Garg", email =
         "elika.garg@mail.mcgill.ca", role = c("aut", "cre")),
         person("Carl", "Murie", email = "cmurie@fredhutch.org", role =
@@ -32,7 +32,7 @@ Collate: 'ex_dataMatrix.R' 'inglese.R' 'internal.R' 'normZ.R'
         'statSights.R'
 VignetteBuilder: knitr
 RoxygenNote: 5.0.1
-biocViews: CellBasedAssays, MicrotitrePlateAssay, Normalization,
+biocViews: ImmunoOncology, CellBasedAssays, MicrotitrePlateAssay, Normalization,
         MultipleComparison, Preprocessing, QualityControl, BatchEffect,
         Visualization
 NeedsCompilation: no
